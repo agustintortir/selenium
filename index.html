@@ -1,0 +1,35 @@
+<center>
+
+Username: <input id="user" type="text">
+<br>
+Password: <input id="pass" type="password">
+<br><button onclick="login()" style="background-color: #4CAF50; border: none; color: white; padding: 10px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;" >Login</button></center>
+
+<script>
+    function login(){
+        if (document.getElementById("user").value === "a" && document.getElementById("pass").value === "a"){
+            location.href = "./pagina.html";
+        } else {
+            alert("no");
+        };
+    }
+</script>
+
+<style>
+:root {
+  --size-bezel: .5rem;
+  --size-radius: 10px;
+}
+
+input {
+    box-sizing: border-box;
+    display: block;
+    width: 20%;
+    border: 3px solid currentColor;
+    padding: calc(var(--size-bezel) * 0.6) var(--size-bezel);
+    color: currentColor;
+    background: transparent;
+    border-radius: var(--size-radius);
+}
+
+</style>
